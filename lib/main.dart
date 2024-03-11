@@ -48,9 +48,9 @@ class FooderlichState extends State<Fooderlich> {
         builder: (context, profileManager, child) {
           ThemeData theme;
           if (profileManager.darkMode) {
-            theme = FooderlichTheme.light();
-          } else {
             theme = FooderlichTheme.dark();
+          } else {
+            theme = FooderlichTheme.light();
           }
 
           final router = _appRouter.router;
